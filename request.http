@@ -1,0 +1,30 @@
+//primera consulta solo para traer datos de la tabla profesor
+###
+GET http://localhost:9000/api HTTP/1.1
+
+
+###
+POST http://localhost:9000/api HTTP/1.1
+//para enviar se debe aclarar que lo que se envia debe ser en formato json
+Content-Type: application/json
+
+{
+    "Nombre": "s",
+    "Apellido": "d",
+    "CedulaIdentidad": 2 
+}
+
+//se declara para eliminar un registro con el id
+###
+DELETE http://localhost:9000/api/12 HTTP/1.1
+
+
+// se declara para actualizar registro
+###
+PUT http://localhost:9000/api/2 HTTP/1.1
+//para enviar se debe aclarar que lo que se envia debe ser en formato json
+Content-Type: application/json
+
+{
+    "Nombre": "actualizado"
+}
